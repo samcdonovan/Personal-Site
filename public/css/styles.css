@@ -388,6 +388,10 @@ p {
 }
 
 @media(max-width:900px) {
+  .mode-icon {
+    margin-left: 0;
+  }
+
   .mountain {
     position: relative;
     width: 100%;
