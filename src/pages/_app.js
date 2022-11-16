@@ -1,21 +1,22 @@
 import Layout from '../components/Layout.jsx';
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
 import "../../public/css/styles.css";
 import Head from 'next/head';
 import Script from 'next/script';
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
+  /*useEffect(() => {
+    typeof document !== undefined ? require('bootstrap/dist/js/bootstrap.js') : null
+  }, [])
+*/
 
 
-  /*
-    useEffect(() => {
-      import("bootstrap/dist/js/bootstrap.bundle.min.js");
-    }, []);
-  */
   return (
     <>
       <Head>
         <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Sam's Personal Website</title>
       </Head>
 
