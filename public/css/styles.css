@@ -1,0 +1,410 @@
+/* Styling variables */
+:root {
+  --title-font: 'Sofia', serif;
+  --main-font: 'Montserrat', sans-serif;
+}
+
+body, body[data-theme="light"] {
+  --highlight-color: #66bfbf;
+  --main-bg: #fff;
+  --secondary-color: #eaf6f6;
+  --font-color: #40514e;
+  --clouds: url("../../public/img/cloud.png");
+}
+
+body[data-theme="dark"] {
+  --highlight-color: #66bfbf;
+  --main-bg: #2c3333;
+  --secondary-color: #395b64;
+  --font-color: #fff;
+  --clouds: url("../../public/img/cloud_stars.png");
+}
+
+body {
+  color: var(--font-color);
+  margin: 0;
+  text-align: center;
+  background-color: var(--main-bg);
+  font-family: var(--main-font);
+  font-size: 1rem;
+}
+
+.separator {
+  border-color: #b2b2b2;
+  border-style: dotted none none;
+  width: 10%;
+  border-width: 5px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.profile hr {
+  margin-top: 50px;
+}
+
+.active:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  border-bottom: 1px solid var(--font-color);
+}
+
+.project hr {
+  border-color: #e5e5e5;
+  width: 10%;
+}
+
+.navbar {
+  text-align: center;
+  top: 0;
+  padding-right: 20px;
+  color: var(--font-color);
+  background-color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  text-align: center;
+  color: var(--font-color);
+}
+
+.nav-link:active {
+  color: var(--font-color);
+}
+
+.main-title {
+  font-size: 5.625rem;
+  font-family: var(--title-font);
+  margin: 50px auto 0 auto;
+}
+
+.section-title, .sub-title {
+  font-family: var(--main-font);
+  color: var(--highlight-color);
+}
+
+.section-title {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 2;
+}
+
+.nav-link:focus {
+  color: var(--font-color);
+}
+
+.nav-link:hover, a:hover {
+  color: var(--highlight-color);
+}
+
+#footer-link:visited {
+  color: blue;
+}
+
+/* Containers */
+.top-container {
+  position: relative;
+  background-color: var(--secondary-color);
+  padding: 0;
+  width: 100vw;
+}
+
+.bottom-container {
+  padding: 50px 0 20px;
+  background-color: var(--secondary-color);
+}
+
+.middle-container {
+  padding: 0;
+  padding-top: 20px;
+}
+
+.wrapper {
+  background-color: var(--secondary-color);
+}
+
+.navbar {
+  padding-bottom: 30px;
+}
+
+.header {
+  margin: 20px 0;
+}
+
+/* Intro */
+.intro {
+  margin: auto;
+}
+
+/* Clouds */
+.cloud {
+  position: absolute;
+  background-image: var(--clouds);
+}
+
+.top-cloud {
+  right: 300px;
+
+}
+
+.bottom-cloud {
+  left: 300px;
+  top: 300px;
+}
+
+.mode-icon {
+  color: #f9d71c;
+  margin-left: 50px;
+  border-style: solid;
+  border-radius: 100%;
+  border-color: grey;
+  width: 60px;
+  height: 60px;
+  background: none;
+}
+
+.mode-icon:hover {
+  color: #f9d71c;
+}
+
+.mode-icon:focus {
+  outline: none;
+  color: #f9d71c;
+}
+
+.mode-text-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mode-text {
+  color: #dcbb06;
+  font-size: 1rem;
+}
+
+.profile {
+  margin-bottom: 50px;
+}
+
+/* Skills */
+.skill-row {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 100px;
+  text-align: left;
+}
+
+.skill-row img {
+  width: 25%;
+}
+
+.left-img {
+  float: left;
+  margin-right: 20px;
+}
+
+.right-img {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Contact */
+.contact-me {
+  margin: 100px 0;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.footer-link {
+  font-family: var(--main-font);
+  margin: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyright {
+  color: var(--highlight-color);
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+/* Projects */
+.project {
+  text-align: center;
+  padding: 3% 15%;
+}
+
+.project hr {
+  margin-bottom: 20px;
+}
+
+.technologies, .languages {
+  padding: 0 5%;
+}
+
+.fa-github {
+  color: black;
+}
+
+.proj-link i {
+  transition: all .5s ease-out;
+}
+
+.proj-link i:hover {
+  transform: scale(1.1);
+}
+
+/*
+  Carousel styling
+  
+  .project-img {
+    width: 100%;
+    position: relative;
+    height: 400px;
+  }
+  
+  
+  .project-img img {
+  
+    width: 100%;
+    max-height: 400px;
+    position: relative;
+    margin-bottom: 10px;
+  
+  }
+  
+  .carousel-inner {
+    width: 100%;
+  }
+  
+  .carousel-item {
+    padding: 7% 15%;
+  }
+  
+  .caption {
+    position: relative;
+    font-size: 0.9rem;
+  }
+  */
+
+/* Project styling */
+.bg-1, .bg-1 i {
+  background-color: #575a5e;
+  color: #fff;
+}
+
+.bg-1 hr {
+  border-color: #fff;
+}
+
+.bg-2, .bg-2 i {
+  background-color: #f4f7f5;
+  color: black;
+}
+
+.bg-2 hr {
+  border-color: black;
+}
+
+.js {
+  background-color: #d6b85a;
+}
+
+.ts {
+  background-color: #fde992;
+}
+
+.php {
+  background-color: plum;
+}
+
+.java {
+  background-color: coral;
+}
+
+.py {
+  background-color: #72a0c1;
+}
+
+.special {
+  background-color: violet;
+}
+
+.other {
+  background-color: lavender;
+}
+
+.cpp {
+  background-color: #ff5733;
+}
+
+.db {
+  background-color: aquamarine;
+}
+
+.badge {
+  color: black;
+  font-size: 1rem;
+  margin: 10px;
+}
+
+.outer-temp {
+  display: table;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 80vh;
+  width: 100%;
+}
+
+.temp-div {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh;
+}
+
+.temp-div div {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+@media (min-width:1000px) {
+  .intro {
+    width: 40%;
+  }
+}
+
+@media(max-width:900px) {
+  .mountain {
+    position: relative;
+    width: 100%;
+    border-style: solid;
+  }
+
+  .cloud {
+    position: relative;
+  }
+
+  .top-cloud {
+    right: 100px;
+    margin-top: 30px;
+  }
+
+  .bottom-cloud {
+    left: 100px;
+    top: 0;
+  }
+}
