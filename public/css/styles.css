@@ -399,12 +399,12 @@ p {
   }
 
   .top-cloud {
-    right: 100px;
+    right: 90px;
     margin-top: 30px;
   }
 
   .bottom-cloud {
-    left: 100px;
+    left: 90px;
     top: 0;
   }
 }
