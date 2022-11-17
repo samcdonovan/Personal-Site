@@ -6,7 +6,7 @@ export default function Project(props) {
             <div className={"project row bg-" + (props.id % 2 === 0 ? "1" : "2")}>
 
                 <h2 className="section-title">{props.title}</h2>
-                <hr />
+                <hr className="separator" />
 
                 <div className="row">
                     <div className={"col-" + (props.technologies === undefined ? "lg-12" : "md-6")}>

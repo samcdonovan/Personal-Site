@@ -80,6 +80,7 @@ body {
 }
 
 .section-title, .sub-title {
+  text-align: center;
   font-family: var(--main-font);
   color: var(--highlight-color);
 }

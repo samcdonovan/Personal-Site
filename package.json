@@ -1,5 +1,5 @@
 {
-  "name": "next-2",
+  "name": "Personal-Site",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.2",
     "next": "13.0.3",
     "react": "18.2.0",

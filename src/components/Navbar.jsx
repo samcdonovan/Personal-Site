@@ -14,11 +14,8 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = router.pathname;
 
-  return (
-    <div className="top-container">
-      <div className="container-fluid">
-
-        <nav className="navbar navbar-expand-lg navbar-light">
+  /*
+          <nav className="navbar navbar-expand-lg navbar-light">
 
           <ToggleButton />
           <button className="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,6 +36,33 @@ export default function Navbar() {
             </ul>
           </div>
         </nav>
+        */
+  return (
+    <div className="top-container">
+      <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg">
+
+          <ToggleButton className="navbar-brand" />
+          <button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li className={"nav-item" + (pathname === "/" ? " active" : "")}>
+                <Link className="nav-link" href="/">About</Link>
+              </li>
+              <li className={"nav-item" + (pathname === "/projects" ? " active" : "")}>
+                <Link className="nav-link" href="/projects">Projects</Link>
+              </li>
+              <li className={"nav-item" + (pathname === "/blog" ? " active" : "")}>
+                <Link className="nav-link" href="/blog">Blog</Link>
+              </li>
+
+            </ul>
+          </div>
+        </nav>
+
       </div>
 
       {pathname === "/" ?
