@@ -197,6 +197,8 @@ p {
 }
 
 /* Skills */
+.skills {}
+
 .skill-row {
   width: 50%;
   margin: auto;
@@ -393,9 +395,14 @@ p {
     margin-left: 0;
   }
 
+  .mode-text-container {
+    visibility: hidden;
+  }
+
   .mountain {
     position: relative;
     width: 100%;
+    height: 100%;
     border-style: solid;
   }
 
@@ -411,5 +418,14 @@ p {
   .bottom-cloud {
     left: 90px;
     top: 0;
+  }
+
+  .left-img, .right-img {
+    width: 100%;
+    height: 200%;
+  }
+
+  .skill-row {
+    width: 80%;
   }
 }
