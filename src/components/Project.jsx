@@ -3,7 +3,7 @@ import React from 'react';
 export default function Project(props) {
     return (
         <div className="container-fluid">
-            <div className={"project row justify-content-center bg-" + (props.id % 2 === 0 ? "1" : "2")}>
+            <div className={"project justify-content-center bg-" + (props.id % 2 === 0 ? "1" : "2")}>
 
                 <h2 className="section-title">{props.title}</h2>
                 <hr className="separator" />
@@ -22,7 +22,7 @@ export default function Project(props) {
 
                     {props.technologies === undefined ? null :
                         <div className="col-md-6">
-                            <h3 className="sub-title">Tehcnologies / Frameworks:</h3>
+                            <h3 className="sub-title">Technologies / Frameworks:</h3>
                             <div className="technologies">
                                 {props.technologies.map((technology) => {
                                     return <span key={technology.tech} className={"badge " + technology.type}>{technology.tech}</span>;

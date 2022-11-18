@@ -4,7 +4,7 @@ import projects from "../project_data.js";
 export default function Projects() {
   return (
     <div className="wrapper">
-      <div className="middle-container">
+      <div className="middle-container projects">
 
         {projects.map((project) => {
 
