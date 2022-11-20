@@ -83,8 +83,8 @@ export default function Navbar() {
         <div className="header">
           <h2 className="section-title">Projects</h2>
           <p className="header-desc">
-            Here are some of my favourite and most interesting projects that I
-            completed whilst studying Computer Science.
+            Below are some of my favourite programming projects, detailing the <br />languages and tools used for each project,
+            along with their GitHub repo link.
           </p>
         </div>
         : null
