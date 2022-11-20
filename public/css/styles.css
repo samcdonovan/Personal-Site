@@ -116,12 +116,8 @@ p {
   position: relative;
   background-color: var(--secondary-color);
   padding: 0;
-  width: 100vw;
-}
-
-.bottom-container {
-  padding: 50px 0 20px;
-  background-color: var(--secondary-color);
+  margin-bottom: -20px;
+  z-index: 1000;
 }
 
 .middle-container {
@@ -129,12 +125,13 @@ p {
   padding-top: 20px;
 }
 
-.wrapper {
+.bottom-container {
+  padding: 50px 0 20px;
   background-color: var(--secondary-color);
 }
 
-.header {
-  margin: 20px 0;
+.wrapper {
+  background-color: var(--secondary-color);
 }
 
 /* Intro */
@@ -150,7 +147,6 @@ p {
 
 .top-cloud {
   right: 300px;
-
 }
 
 .bottom-cloud {
@@ -240,6 +236,10 @@ p {
 }
 
 /* Projects */
+.header {
+  padding-bottom: 10px;
+}
+
 .projects {
   border-radius: 1%;
   padding: 0;
@@ -382,7 +382,6 @@ p {
   .navbar {
     padding-bottom: 15px;
   }
-
 
   .mode-icon {
     margin-left: 10px;

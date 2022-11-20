@@ -77,6 +77,18 @@ export default function Navbar() {
         </div>
         : null
       }
+
+      {pathname === "/projects" ?
+
+        <div className="header">
+          <h2 className="section-title">Projects</h2>
+          <p className="header-desc">
+            Here are some of my favourite and most interesting projects that I
+            completed whilst studying Computer Science.
+          </p>
+        </div>
+        : null
+      }
     </div>
   );
 }
