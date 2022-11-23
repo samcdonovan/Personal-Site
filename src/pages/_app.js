@@ -9,8 +9,6 @@ function MyApp({ Component, pageProps }) {
     import('bootstrap/dist/js/bootstrap');
   }, []);
 
-
-
   return (
     <>
       <Head>
