@@ -270,9 +270,10 @@ p {
 }
 
 .bg-1, .bg-1 i {
-  /*background-color: #575a5e;
-  */
   background-color: #6e918c;
+}
+
+.bg-1, .bg-1 i, .bg-1 .caption {
   color: #f4f7f5;
 }
 
@@ -287,24 +288,27 @@ p {
 
 .bg-2, .bg-2 i {
   background-color: #f4f7f5;
+}
+
+.bg-2, .bg-2 i, .bg-2 .caption {
   color: black;
 }
 
 .bg-2 .section-title, .bg-2 .sub-title {
-
-  /*color: #89B5AF;
-  text-shadow: 0px 1px #689e9e;
-  */
   color: #2f4747;
   text-shadow: 0px 1px #689e9e;
-  /*
-  color: #509292;
-  text-shadow: 0px 1px #66bfbf;
-  */
 }
 
 .bg-2 hr {
   border-color: black;
+}
+
+.bg-1 .carousel-div {
+  float: right;
+}
+
+.bg-1 .tech-lang {
+  float: left;
 }
 
 .js {
@@ -351,8 +355,6 @@ p {
 
 /* Carousel */
 
-.carousel {}
-
 .carousel-caption {
   position: relative;
   left: auto;
@@ -385,6 +387,11 @@ p {
   height: 90%;
   width: auto;
   margin: auto;
+}
+
+.caption {
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 .outer-temp {

@@ -36,15 +36,16 @@ export default function Project(props) {
                                     </Carousel.Caption>
                                 </Carousel.Item>
                                 */
+    const bgType = props.id % 2 === 0 ? "1" : "2";
     return (
         <div className="container-fluid">
-            <div className={"project justify-content-center bg-" + (props.id % 2 === 0 ? "1" : "2")}>
+            <div className={"project justify-content-center bg-" + bgType}>
 
                 <h2 className="section-title">{props.title}</h2>
                 <hr className="separator" />
                 <div className="row">
                     {props.images === undefined ? null :
-                        <div className="col-md-6">
+                        <div className={"col-md-6" + (bgType === "1" ? " order-1" : " order-2")}>
 
                             <Carousel controls={false} variant="dark">
                                 {props.images.map((image, index) => {
@@ -55,8 +56,8 @@ export default function Project(props) {
                                                 src={image.src}
                                                 alt={props.title + " slide " + index}
                                             />
-                                            <Carousel.Caption>
-                                                <p>{image.caption}</p>
+                                            <Carousel.Caption className="caption">
+                                                <p className="caption-text">{image.caption}</p>
                                             </Carousel.Caption>
                                         </Carousel.Item>)
                                 })}
@@ -64,7 +65,7 @@ export default function Project(props) {
                         </div>
                     }
 
-                    <div className={"col-" + (props.images === undefined ? "lg-12" : "md-6")}>
+                    <div className={"col-" + (props.images === undefined ? "lg-12" : "md-6") + (bgType === "1" ? " order-2" : " order-1")}>
                         <div className="row">
                             <div className={"col-" + (props.technologies === undefined ? "lg-12" : "md-6")}>
 
