@@ -3,17 +3,39 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default function Project(props) {
     /*
-         {props.images.map((image) => {
-                                return (
-                                    <Carousel.Item className="item">
-                                        <img
-                                            className="d-block w-100"
-                                            src={image.src}
-                                            alt="First slide"
-                                        />
-                                    </Carousel.Item>)
-                            })}
-                            */
+    
+                                <Carousel.Item className="item">
+                                    <img
+                                        className="d-block"
+                                        src="img/projects/sentiment1.png"
+                                        alt="First slide"
+                                    />
+    
+                                    <Carousel.Caption>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                                <Carousel.Item className="item">
+                                    <img
+                                        className="d-block"
+                                        src="img/projects/sentiment2.png"
+                                        alt="Second slide"
+                                    />
+                                    <Carousel.Caption>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                                <Carousel.Item className="item">
+                                    <img
+                                        className="d-block"
+                                        src="img/projects/sentiment4.png"
+                                        alt="Third slide"
+                                    />
+                                    <Carousel.Caption>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </Carousel.Caption>
+                                </Carousel.Item>
+                                */
     return (
         <div className="container-fluid">
             <div className={"project justify-content-center bg-" + (props.id % 2 === 0 ? "1" : "2")}>
@@ -21,45 +43,28 @@ export default function Project(props) {
                 <h2 className="section-title">{props.title}</h2>
                 <hr className="separator" />
                 <div className="row">
-                    <div className="col-md-6">
+                    {props.images === undefined ? null :
+                        <div className="col-md-6">
 
-                        <Carousel controls={false} variant="dark">
+                            <Carousel controls={false} variant="dark">
+                                {props.images.map((image, index) => {
+                                    return (
+                                        <Carousel.Item className="item">
+                                            <img
+                                                className="d-block"
+                                                src={image.src}
+                                                alt={props.title + " slide " + index}
+                                            />
+                                            <Carousel.Caption>
+                                                <p>{image.caption}</p>
+                                            </Carousel.Caption>
+                                        </Carousel.Item>)
+                                })}
+                            </Carousel>
+                        </div>
+                    }
 
-                            <Carousel.Item className="item">
-                                <img
-                                    className="d-block"
-                                    src="img/projects/sentiment1.png"
-                                    alt="First slide"
-                                />
-
-                                <Carousel.Caption>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item className="item">
-                                <img
-                                    className="d-block"
-                                    src="img/projects/sentiment2.png"
-                                    alt="Second slide"
-                                />
-                                <Carousel.Caption>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                            <Carousel.Item className="item">
-                                <img
-                                    className="d-block"
-                                    src="img/projects/sentiment4.png"
-                                    alt="Third slide"
-                                />
-                                <Carousel.Caption>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </Carousel.Caption>
-                            </Carousel.Item>
-                        </Carousel>
-                    </div>
-
-                    <div className="col-md-6">
+                    <div className={"col-" + (props.images === undefined ? "lg-12" : "md-6")}>
                         <div className="row">
                             <div className={"col-" + (props.technologies === undefined ? "lg-12" : "md-6")}>
 

@@ -2,6 +2,12 @@ const projects = [
   {
     id: 0,
     title: "Twitter Sentiment Analysis",
+    images: [
+      { src: "img/projects/sentiment1.png", caption: "Pie chart displaying overall sentiment for all collected Tweets." },
+      { src: "img/projects/sentiment2.png", caption: "Line/scatter chart displaying predicted sentiment for every collected Tweet over time" },
+      { src: "img/projects/sentiment3.png", caption: "Bar chart showing results from a 5-fold test comparing this project’s implementation against Scikit-learn's classifier" },
+      { src: "img/projects/sentiment4.png", caption: "Confusion matrix for Multinomial Naïve Bayes implementation (percentages are rounded to 1 D.P.). Calculated from the averages of each confusion matrix for the 5-fold test" }
+    ],
     languages: [
       { lang: "Python", type: "py" }
     ],

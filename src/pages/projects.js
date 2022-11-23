@@ -12,6 +12,7 @@ export default function Projects() {
             key={project.id}
             id={project.id}
             title={project.title}
+            images={project.images}
             languages={project.languages}
             technologies={project.technologies}
             description={project.description}
