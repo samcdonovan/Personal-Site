@@ -26,6 +26,11 @@ const projects = [
   {
     id: 1,
     title: "NBA Data Visualization Website",
+    images: [
+      { src: "img/projects/datavis1.png", caption: "Front page for the website (menu in the middle allows user to choose a team)." },
+      { src: "img/projects/datavis2.png", caption: "Boston Celtics data visualization. Scatter chart showing score difference over 500+ games." },
+      { src: "img/projects/datavis3.png", caption: "Boston Celtics data visualization. Stacked area chart showing Twitter sentiment over a period of time." }
+    ],
     languages: [
       { lang: "JavaScript", type: "js" },
       { lang: "TypeScript", type: "ts" }
@@ -55,6 +60,11 @@ const projects = [
   {
     id: 3,
     title: "Book Price Comparison Website",
+    images: [
+      { src: "img/projects/bookcomp1.png", caption: "Front page for the website, allows the user to search for a book." },
+      { src: "img/projects/bookcomp2.png", caption: "Search page; displays all the books that are related to the search term (e.g. George Orwell)." },
+      { src: "img/projects/bookcomp3.png", caption: "RESTful GET path for all books in the database." }
+    ],
     languages: [
       { lang: "Java", type: "java" },
       { lang: "JavaScript", type: "js" }

@@ -50,7 +50,7 @@ export default function Project(props) {
                             <Carousel controls={false} variant="dark">
                                 {props.images.map((image, index) => {
                                     return (
-                                        <Carousel.Item className="item">
+                                        <Carousel.Item key={index} className="item">
                                             <img
                                                 className="d-block"
                                                 src={image.src}
