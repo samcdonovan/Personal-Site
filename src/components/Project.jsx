@@ -48,8 +48,8 @@ export default function Project(props) {
                             </Carousel.Item>
                             <Carousel.Item className="item">
                                 <img
-                                    className="center-block w-100"
-                                    src="img/projects/sentiment3.png"
+                                    className="d-block"
+                                    src="img/projects/sentiment4.png"
                                     alt="Third slide"
                                 />
                                 <Carousel.Caption>
