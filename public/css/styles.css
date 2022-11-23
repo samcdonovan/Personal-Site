@@ -303,14 +303,6 @@ p {
   border-color: black;
 }
 
-.bg-1 .carousel-div {
-  float: right;
-}
-
-.bg-1 .tech-lang {
-  float: left;
-}
-
 .js {
   background-color: #d6b85a;
 }
@@ -359,10 +351,13 @@ p {
   position: relative;
   left: auto;
   right: auto;
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 3% 5%;
 }
 
 .carousel-indicators {
-  bottom: -35px;
+  bottom: -45px;
 }
 
 .carousel-indicators .active {
@@ -384,14 +379,9 @@ p {
 
 .item img {
   position: relative;
-  height: 90%;
+  height: 85%;
   width: auto;
   margin: auto;
-}
-
-.caption {
-  font-size: 0.9rem;
-  font-style: italic;
 }
 
 .outer-temp {
