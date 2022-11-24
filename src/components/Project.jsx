@@ -1,42 +1,29 @@
-import React from 'react';
+import { React, useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 export default function Project(props) {
-    /*
-    
-                                <Carousel.Item className="item">
-                                    <img
-                                        className="d-block"
-                                        src="img/projects/sentiment1.png"
-                                        alt="First slide"
-                                    />
-    
-                                    <Carousel.Caption>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                                <Carousel.Item className="item">
-                                    <img
-                                        className="d-block"
-                                        src="img/projects/sentiment2.png"
-                                        alt="Second slide"
-                                    />
-                                    <Carousel.Caption>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                                <Carousel.Item className="item">
-                                    <img
-                                        className="d-block"
-                                        src="img/projects/sentiment4.png"
-                                        alt="Third slide"
-                                    />
-                                    <Carousel.Caption>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </Carousel.Caption>
-                                </Carousel.Item>
-                                */
+
+    const [isScreenSmall, setIsScreenSmall] = useState(window.innerWidth < 1200);
+
+    useEffect(function mount() {
+
+        function getSize() {
+            let size = window.innerWidth;
+            if (size <= 900)
+                setIsScreenSmall(true);
+            else
+                setIsScreenSmall(false);
+        }
+
+        window.addEventListener("resize", getSize);
+
+        return function unMount() {
+            window.removeEventListener("resize", getSize);
+        };
+    });
+
     const bgType = props.id % 2 === 0 ? "1" : "2";
+
     return (
         <div className="container-fluid">
             <div className={"project justify-content-center bg-" + bgType}>
@@ -45,7 +32,7 @@ export default function Project(props) {
                 <hr className="separator" />
                 <div className="row">
                     {props.images === undefined ? null :
-                        <div className={"col-md-6" + (bgType === "1" ? " order-1" : " order-2")}>
+                        <div className={"col-md-6" + (isScreenSmall ? "" : (bgType === "1" ? " order-1" : " order-2"))}>
 
                             <Carousel controls={false} variant="dark">
                                 {props.images.map((image, index) => {
@@ -65,7 +52,8 @@ export default function Project(props) {
                         </div>
                     }
 
-                    <div className={"col-" + (props.images === undefined ? "lg-12" : "md-6") + (bgType === "1" ? " order-2" : " order-1")}>
+                    <div className={"col-" + (props.images === undefined ? "lg-12" : "md-6") +
+                        (isScreenSmall ? "" : (bgType === "1" ? " order-2" : " order-1"))}>
                         <div className="row">
                             <div className={"col-" + (props.technologies === undefined ? "lg-12" : "md-6")}>
 

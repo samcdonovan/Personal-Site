@@ -382,6 +382,7 @@ p {
   height: 85%;
   width: auto;
   margin: auto;
+  border-radius: 1%;
 }
 
 .outer-temp {
@@ -464,5 +465,24 @@ p {
 
   .badge {
     font-size: 0.9rem;
+  }
+
+  .carousel {
+    margin-bottom: 50px;
+  }
+
+  .carousel-caption {
+    font-size: 0.7rem;
+    bottom: 10px;
+  }
+
+  .carousel-indicators {}
+
+  .item {
+    height: 200px;
+  }
+
+  .item img {
+    height: 80%;
   }
 }
