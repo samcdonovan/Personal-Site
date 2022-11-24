@@ -4,7 +4,7 @@ import projects from "../project_data.js";
 export default function Projects() {
   return (
     <div className="wrapper">
-      <div className="middle-container projects">
+      <div className="middle-container projects row">
 
         {projects.map((project) => {
 
@@ -17,6 +17,7 @@ export default function Projects() {
             technologies={project.technologies}
             description={project.description}
             link={project.link}
+            type={(project.id < 5 ? "main" : "other")}
           />
         })}
       </div>

@@ -253,14 +253,6 @@ p {
   margin-bottom: 20px;
 }
 
-.technologies, .languages {
-  padding: 0 5%;
-}
-
-.fa-github {
-  color: black;
-}
-
 .proj-link i {
   transition: all .5s ease-out;
 }
@@ -301,6 +293,36 @@ p {
 
 .bg-2 hr {
   border-color: black;
+}
+
+.other-proj {
+  padding: 2px;
+}
+
+.other-proj .project {
+  height: 450px;
+  font-size: 0.8rem;
+}
+
+.other-proj .section-title, .other-proj .sub-title {
+  font-size: 1.5rem;
+}
+
+.other-proj .project, .other-proj .section-title, .other-proj .sub-title, .other-proj i, .other-proj hr {
+  background-color: var(--main-bg);
+  color: var(--font-color);
+}
+
+.other-proj hr {
+  border-color: var(--font-color);
+}
+
+.technologies, .languages {
+  padding: 0 5%;
+}
+
+.fa-github {
+  color: black;
 }
 
 .js {
@@ -476,7 +498,13 @@ p {
     bottom: 10px;
   }
 
-  .carousel-indicators {}
+  .other-proj .section-title, .other-proj .sub-title {
+    font-size: 1rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+  }
 
   .item {
     height: 200px;

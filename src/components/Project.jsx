@@ -3,13 +3,13 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default function Project(props) {
 
-    const [isScreenSmall, setIsScreenSmall] = useState(window.innerWidth < 1200);
+    const [isScreenSmall, setIsScreenSmall] = useState();
 
     useEffect(function mount() {
-
+        setIsScreenSmall(window.innerWidth < 1200);
         function getSize() {
             let size = window.innerWidth;
-            if (size <= 900)
+            if (size <= 1200)
                 setIsScreenSmall(true);
             else
                 setIsScreenSmall(false);
@@ -25,7 +25,7 @@ export default function Project(props) {
     const bgType = props.id % 2 === 0 ? "1" : "2";
 
     return (
-        <div className="container-fluid">
+        <div className={"container-fluid" + (props.type === "main" ? " main-proj col-sm-12" : " other-proj col-sm-6")}>
             <div className={"project justify-content-center bg-" + bgType}>
 
                 <h2 className="section-title">{props.title}</h2>
@@ -55,7 +55,7 @@ export default function Project(props) {
                     <div className={"col-" + (props.images === undefined ? "lg-12" : "md-6") +
                         (isScreenSmall ? "" : (bgType === "1" ? " order-2" : " order-1"))}>
                         <div className="row">
-                            <div className={"col-" + (props.technologies === undefined ? "lg-12" : "md-6")}>
+                            <div className={"col-" + (props.technologies === undefined ? "lg-12" : (props.type === "other" ? "6" : "md-12"))}>
 
                                 <h3 className="sub-title">Languages:</h3>
 
@@ -67,7 +67,7 @@ export default function Project(props) {
                             </div>
 
                             {props.technologies === undefined ? null :
-                                <div className="col-md-6">
+                                <div className={"col-" + (props.type === "other" ? "6" : "md-12")}>
                                     <h3 className="sub-title">Technologies / Frameworks:</h3>
                                     <div className="technologies">
                                         {props.technologies.map((technology) => {
