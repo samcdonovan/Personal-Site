@@ -29,7 +29,6 @@ export default function Home() {
           title="Artificial Intelligence"
           content="Artificial Intelligence was one of my favourite modules at University and I would love to explore more AI concepts in the future. Natural Language Processing (NLP) in particular is something that I am very intersted in."
         />
-
       </div>
 
       <hr className="separator" />

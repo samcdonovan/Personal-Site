@@ -32,8 +32,8 @@ export default function Navbar() {
               <li className={"nav-item" + (pathname === "/projects" ? " active" : "")}>
                 <Link className="nav-link" href="/projects">Projects</Link>
               </li>
-              <li className={"nav-item" + (pathname === "/blog" ? " active" : "")}>
-                <Link className="nav-link" href="/blog">Blog</Link>
+              <li className={"nav-item" + (pathname === "/contact" ? " active" : "")}>
+                <Link className="nav-link" href="/contact">Contact</Link>
               </li>
 
             </ul>

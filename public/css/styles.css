@@ -158,6 +158,7 @@ p {
 .middle-container {
   padding: 0;
   padding-top: 20px;
+  min-height: 80vh;
 }
 
 .bottom-container {
@@ -417,6 +418,16 @@ p {
   width: auto;
   margin: auto;
   border-radius: 1%;
+}
+
+/* ============
+   CONTACT PAGE 
+   ============*/
+.contact-container {}
+
+#contact-form {
+  width: 80%;
+  margin: auto;
 }
 
 /* =========
