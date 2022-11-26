@@ -1,77 +1,19 @@
 
 export default function Contact() {
-    /*
-     <form
-            action="https://formsubmit.co/c2108a5bb15a8e233f4479c680186dbe"
-            method="POST"
-        >
-            <input type="text" name="_honey" style={{ display: 'none' }} />
 
-            <input type="hidden" name="_captcha" value="false" />
-
-            <div className="form-container">
-                <p>
-                    Want to write me an email? Fill in the form below and I should respond
-                    within 1 to 3 working days!
-                </p>
-                <div className="name-fields">
-                    <div className="name-container">
-                        <input
-                            type="text"
-                            placeholder="First name"
-                            id="first-name"
-                            name="first-name"
-                            required="required"
-                        /><br />
-                    </div>
-
-                    <div className="surname=container">
-                        <input
-                            type="text"
-                            placeholder="Surname"
-                            id="surname"
-                            name="surname"
-                            required="required"
-                        /><br />
-                    </div>
-                </div>
-
-                <div className="input-container">
-                    <input
-                        type="text"
-                        placeholder="Subject"
-                        id="subject"
-                        name="subject"
-                        required="required"
-                    />
-                </div>
-                <div className="input-container">
-                    <input
-                        type="email"
-                        placeholder="Your email address"
-                        id="email"
-                        name="email"
-                        required="required"
-                    /><br />
-                </div>
-                <div className="input-container">
-                    <input
-                        type="text"
-                        placeholder="Write your message here..."
-                        id="message"
-                        name="message"
-                    />
-                </div>
-                <button type="submit">Send!</button>
-            </div>
-        </form>
-        */
     return (
 
         <div className="middle-container">
 
             <div className="contact-container container-fluid">
-                <form id="contact-form">
+                <form id="contact-form" action="https://formsubmit.co/c2108a5bb15a8e233f4479c680186dbe"
+                    method="POST"
+                >
+                    {/* Honeypot */}
+                    <input type="text" name="_honey" style={{ display: 'none' }} />
+
+                    {/* Disable captcha */}
+                    <input type="hidden" name="_captcha" value="false" />
 
                     <div class="row">
                         <div class="col-md-6">
