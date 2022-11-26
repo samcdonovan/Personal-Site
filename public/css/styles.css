@@ -436,8 +436,8 @@ p {
 }
 
 #contact-form label {
-  display: inline-block;
   text-align: left;
+  float: left;
 }
 
 .form-field {
@@ -566,6 +566,15 @@ p {
 
   .item img {
     height: 80%;
+  }
+
+  /* Contact form */
+  .contact-container {
+    margin-bottom: 20px;
+  }
+
+  #contact-form {
+    width: 80%;
   }
 }
 

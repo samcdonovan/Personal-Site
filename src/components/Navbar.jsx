@@ -68,10 +68,10 @@ export default function Navbar() {
       }
 
       {pathname === "/contact" ?
-        <div class="header">
-          <h2 className="section-title h1-responsive font-weight-bold text-center">Contact me</h2>
+        <div className="header">
+          <h2 className="section-title h1-responsive font-weight-bold text-center">Contact Me</h2>
 
-          <p className="text-center w-responsive mx-auto">Know of any opportunities that might suit me? Let me know!
+          <p className="header-desc w-responsive mx-auto">Know of any opportunities that might suit me? Let me know!
             I'm currently seeking work, so it would be greatly appreciated!
             <br />Fill in the form below and I'll get back to you as soon as I can.</p>
         </div>

@@ -17,33 +17,33 @@ export default function Contact() {
 
                     <input type="hidden" name="_next" value="https://samcdonovan.netlify.app/contact" />
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="name">Name</label>
+                    <div className="row">
+                        <div className="col-md-6">
+                            <label htmlFor="name">Name</label>
                             <input type="text" id="name" name="name" className="form-control" placeholder="Your name" />
                         </div>
 
-                        <div class="col-md-6">
-                            <label for="email">Email</label>
+                        <div className="col-md-6">
+                            <label htmlFor="email">Email</label>
                             <input type="text" id="email" name="email" className="form-control" placeholder="Your email" />
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="form-field">
-                            <label for="subject">Subject</label>
+                            <label htmlFor="subject">Subject</label>
                             <input type="text" id="subject" name="subject" className="form-control" placeholder="Subject" />
                         </div>
                     </div>
 
                     <div className="row">
                         <div className="form-field">
-                            <label for="message">Message</label>
+                            <label htmlFor="message">Message</label>
                             <textarea type="text" id="message" name="message" rows="5" className="form-control md-textarea" placeholder="Your message"></textarea>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-primary btn-lg">SEND</button>
+                    <button type="submit" className="btn btn-primary btn-lg">SEND</button>
                 </form>
                 {/*
         
