@@ -63,7 +63,8 @@ const projects = [
     images: [
       { src: "img/projects/bookcomp1.png", caption: "Front page for the website, allows the user to search for a book." },
       { src: "img/projects/bookcomp2.png", caption: "Search page; displays all the books that are related to the search term (e.g. George Orwell)." },
-      { src: "img/projects/bookcomp3.png", caption: "RESTful GET path for all books in the database." }
+      { src: "img/projects/bookcomp3.png", caption: "Comparison page for a book; prices are sorted low to high." },
+      { src: "img/projects/bookcomp4.png", caption: "RESTful GET path for all books in the database." }
     ],
     languages: [
       { lang: "Java", type: "java" },

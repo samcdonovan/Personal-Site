@@ -2,8 +2,8 @@
    GLOBAL 
    =====*/
 
-/* Styling variables */
 :root {
+  /* Styling variables */
   --title-font: 'Sofia', serif;
   --main-font: 'Montserrat', sans-serif;
 }
@@ -386,13 +386,13 @@ p {
   position: relative;
   left: auto;
   right: auto;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-style: italic;
-  padding: 3% 5%;
+  margin: 10px;
 }
 
 .carousel-indicators {
-  bottom: -45px;
+  bottom: -20px;
 }
 
 .carousel-indicators .active {
@@ -402,9 +402,8 @@ p {
   border-left-width: 0;
   border-right-width: 0;
   border-radius: 10px;
-  background-color: var(--secondary-color);
   height: 8px;
-  width: 50px
+  width: 50px;
 }
 
 .item {
@@ -414,12 +413,15 @@ p {
 
 .item img {
   position: relative;
-  height: 85%;
+  height: 80%;
   width: auto;
   margin: auto;
   border-radius: 1%;
 }
 
+/* =========
+   BLOG PAGE 
+   =========*/
 .outer-temp {
   display: table;
   position: relative;
@@ -429,9 +431,6 @@ p {
   width: 100%;
 }
 
-/* =========
-   BLOG PAGE 
-   =========*/
 .temp-div {
   display: table-cell;
   vertical-align: middle;
@@ -515,6 +514,11 @@ p {
   .carousel-caption {
     font-size: 0.7rem;
     bottom: 10px;
+    margin-top: 0;
+  }
+
+  .carousel-indicators {
+    bottom: -55px;
   }
 
   .other-proj .section-title, .other-proj .sub-title {
@@ -526,7 +530,7 @@ p {
   }
 
   .item {
-    height: 200px;
+    height: 250px;
   }
 
   .item img {
