@@ -40,9 +40,9 @@ body {
 
 .separator {
   border-color: #b2b2b2;
-  border-style: dotted none none;
+  border-style: solid none none;
+  border-width: 3px;
   width: 10%;
-  border-width: 5px;
   margin: auto;
   margin-top: 10px;
 }
@@ -198,10 +198,11 @@ p {
 }
 
 /* Skills */
+
 .skill-row {
   width: 50%;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   text-align: left;
 }
 
