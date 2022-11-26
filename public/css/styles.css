@@ -158,7 +158,7 @@ p {
 .middle-container {
   padding: 0;
   padding-top: 20px;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .bottom-container {
@@ -425,7 +425,7 @@ p {
    CONTACT PAGE 
    ============*/
 .contact-container {
-  margin-top: 80px;
+  margin-top: 40px;
   display: inline-block;
 }
 
@@ -445,7 +445,7 @@ p {
 }
 
 /* =========
-   BLOG PAGE 
+   TEMP PAGE 
    =========*/
 .outer-temp {
   display: table;
