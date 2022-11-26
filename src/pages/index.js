@@ -36,7 +36,7 @@ export default function Home() {
         <h2 className="section-title">Get In Touch</h2>
         <h3 className="sub-title">I don't bite!</h3>
         <p className="contact-message">Know of any opportunities that might suit me? Let me know! I'm currently seeking work, so it would be greatly appreciated!</p>
-        <a className="btn btn-lg btn-primary" href="mailto:samcdonovan@gmail.com">CONTACT ME</a>
+        <a className="btn btn-lg btn-primary" href="/contact">CONTACT ME</a>
       </div>
     </div>
   )
