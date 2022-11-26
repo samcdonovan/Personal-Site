@@ -551,4 +551,9 @@ p {
   .intro {
     width: 40%;
   }
+
+  .header-desc {
+    width: 40%;
+    margin: auto;
+  }
 }
