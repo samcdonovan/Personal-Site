@@ -423,11 +423,22 @@ p {
 /* ============
    CONTACT PAGE 
    ============*/
-.contact-container {}
+.contact-container {
+  margin-bottom: 50px;
+}
 
 #contact-form {
-  width: 80%;
+  width: 50%;
   margin: auto;
+}
+
+#contact-form label {
+  display: inline-block;
+  text-align: left;
+}
+
+.form-field {
+  margin: 15px 0;
 }
 
 /* =========

@@ -77,6 +77,43 @@ export default function Contact() {
                     I'm currently seeking work, so it would be greatly appreciated!
                     <br />Fill in the form below and I'll get back to you as soon as I can.</p>
 
+                <form id="contact-form">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" className="form-control" placeholder="Your name" />
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" className="form-control" placeholder="Your email" />
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="form-field">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" className="form-control" placeholder="Subject" />
+                        </div>
+                    </div>
+
+                    <div className="row">
+                        <div className="form-field">
+                            <label for="message">Message</label>
+                            <textarea type="text" id="message" name="message" rows="5" className="form-control md-textarea" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg">SEND</button>
+                </form>
+                {/*
+                <h2 className="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
+
+                <p className="text-center w-responsive mx-auto mb-5">Know of any opportunities that might suit me? Let me know!
+                    I'm currently seeking work, so it would be greatly appreciated!
+                    <br />Fill in the form below and I'll get back to you as soon as I can.</p>
+
                 <div className="row">
 
                     <div className="col-md-9 mb-md-0 mb-5">
@@ -107,14 +144,10 @@ export default function Contact() {
                             </div>
 
                             <div className="row">
-
                                 <div className="col-md-12">
-
                                     <div className="md-form">
                                         <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea" placeholder="Your message"></textarea>
-
                                     </div>
-
                                 </div>
                             </div>
 
@@ -141,6 +174,7 @@ export default function Contact() {
                         </ul>
                     </div>
                 </div>
+                */}
             </div>
         </div>
     )
