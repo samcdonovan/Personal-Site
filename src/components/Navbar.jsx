@@ -14,29 +14,6 @@ export default function Navbar() {
   const router = useRouter();
   const pathname = router.pathname;
 
-  /*
-          <nav className="navbar navbar-expand-lg navbar-light">
-
-          <ToggleButton />
-          <button className="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto justify-content-center">
-              <li className={"nav-item ms-auto" + (pathname === "/" ? " active" : "")}>
-                <Link className="nav-link ms-auto" data-toggle="collapse" data-target="#navbarSupportedContent" href="/">About</Link>
-              </li>
-              <li className={"nav-item ms-auto" + (pathname === "/projects" ? " active" : "")}>
-                <Link className="nav-link ms-auto" data-toggle="collapse" data-target="#navbarSupportedContent" href="/projects">Projects</Link>
-              </li>
-              <li className={"nav-item ms-auto" + (pathname === "/blog" ? " active" : "")}>
-                <Link className="nav-link" data-toggle="collapse" data-target="#navbarSupportedContent" href="/blog">Blog</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        */
   return (
     <div className="top-container">
       <div className="container-fluid">
@@ -83,7 +60,7 @@ export default function Navbar() {
         <div className="header">
           <h2 className="section-title">Projects</h2>
           <p className="header-desc">
-            Below are some of my favourite programming projects, detailing the <br />languages and tools used for each project,
+            Below are some of my favourite programming projects, detailing the languages and tools used for each project,
             along with their GitHub repo link.
           </p>
         </div>

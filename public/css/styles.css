@@ -483,6 +483,11 @@ p {
     top: 0;
   }
 
+  .header-desc {
+    padding: 3%;
+    text-align: center;
+  }
+
   /* Home page skills */
   .left-img, .right-img {
     width: 100%;
