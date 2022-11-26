@@ -170,6 +170,10 @@ p {
   background-color: var(--secondary-color);
 }
 
+.header {
+  padding-bottom: 10px;
+}
+
 /* =========
    HOME PAGE 
    =========*/
@@ -246,9 +250,6 @@ p {
 /* =============
    PROJECTS PAGE 
    =============*/
-.header {
-  padding-bottom: 10px;
-}
 
 .projects {
   border-radius: 1%;
@@ -424,12 +425,14 @@ p {
    CONTACT PAGE 
    ============*/
 .contact-container {
-  margin-bottom: 50px;
+  margin-top: 80px;
+  display: inline-block;
 }
 
 #contact-form {
   width: 50%;
   margin: auto;
+  vertical-align: middle;
 }
 
 #contact-form label {

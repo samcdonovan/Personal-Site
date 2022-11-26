@@ -71,12 +71,6 @@ export default function Contact() {
         <div className="middle-container">
 
             <div className="contact-container container-fluid">
-                <h2 className="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
-
-                <p className="text-center w-responsive mx-auto mb-5">Know of any opportunities that might suit me? Let me know!
-                    I'm currently seeking work, so it would be greatly appreciated!
-                    <br />Fill in the form below and I'll get back to you as soon as I can.</p>
-
                 <form id="contact-form">
 
                     <div class="row">
@@ -108,56 +102,7 @@ export default function Contact() {
                     <button type="submit" class="btn btn-primary btn-lg">SEND</button>
                 </form>
                 {/*
-                <h2 className="h1-responsive font-weight-bold text-center my-4">Contact me</h2>
-
-                <p className="text-center w-responsive mx-auto mb-5">Know of any opportunities that might suit me? Let me know!
-                    I'm currently seeking work, so it would be greatly appreciated!
-                    <br />Fill in the form below and I'll get back to you as soon as I can.</p>
-
-                <div className="row">
-
-                    <div className="col-md-9 mb-md-0 mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                            <div className="row">
-
-                                <div className="col-md-6">
-                                    <div className="md-form mb-0">
-                                        <input type="text" id="name" name="name" className="form-control" placeholder="Your name" />
-                                    </div>
-                                </div>
-
-                                <div className="col-md-6">
-                                    <div className="md-form mb-0">
-                                        <input type="text" id="email" name="email" className="form-control" placeholder="Your email" />
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <div className="md-form mb-0">
-                                        <input type="text" id="subject" name="subject" className="form-control" placeholder="Subject" />
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <div className="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2" className="form-control md-textarea" placeholder="Your message"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </form>
-
-                        <div className="text-center text-md-left">
-                            <a className="btn btn-primary btn-lg" onclick="document.getElementById('contact-form').submit();">SEND</a>
-                        </div>
-                        <div className="status"></div>
-                    </div>
+        
                     <div className="col-md-3 text-center">
                         <ul className="list-unstyled mb-0">
                             <li><i className="fas fa-map-marker-alt fa-2x"></i>
