@@ -177,6 +177,11 @@ p {
 /* =========
    HOME PAGE 
    =========*/
+.home-title {
+  position: relative;
+  z-index: 5
+}
+
 /* Intro */
 .intro {
   margin: auto;
@@ -186,6 +191,7 @@ p {
 .cloud {
   position: absolute;
   background-image: var(--clouds);
+  z-index: 1;
 }
 
 .top-cloud {

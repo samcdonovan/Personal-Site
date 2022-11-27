@@ -45,7 +45,7 @@ export default function Navbar() {
       {pathname === "/" ?
         <div className="home-header">
           <img className="cloud top-cloud" src="img/cloud.png" alt="cloud picture" />
-          <div>
+          <div className="home-title">
             <h1 className="main-title">I'm Sam</h1>
             <h2 className="section-title">a programmer!</h2>
           </div>
