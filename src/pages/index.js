@@ -31,6 +31,39 @@ export default function Home() {
         />
       </div>
 
+      <div className="skills container-fluid">
+
+        <h2 className="section-title">What am I currently doing?</h2>
+        <Skill
+          imgPos="left-img"
+          src="img/docker-kubernetes.png"
+          alt="docker and kubernetes logos"
+          title="Learning Docker and Kubernetes"
+          content="Through my studies, I found out that I thoroughly enjoy Web Development. I have experience in many key FullStack technologies but am always willing and excited to learn more!"
+        />
+        <Skill
+          imgPos="right-img"
+          src="img/computer.png"
+          alt="runner"
+          title="Personal FullStack project"
+          content="Artificial Intelligence was one of my favourite modules at University and I would love to explore more AI concepts in the future. Natural Language Processing (NLP) in particular is something that I am very interested in."
+        />
+        <Skill
+          imgPos="right-img"
+          src="img/leetcode.png"
+          alt="runner"
+          title="Leetcode dailies"
+          content="Artificial Intelligence was one of my favourite modules at University and I would love to explore more AI concepts in the future. Natural Language Processing (NLP) in particular is something that I am very interested in."
+        />
+        <Skill
+          imgPos="right-img"
+          src="img/running.png"
+          alt="runner"
+          title="Training for a half-marathon"
+          content="Artificial Intelligence was one of my favourite modules at University and I would love to explore more AI concepts in the future. Natural Language Processing (NLP) in particular is something that I am very interested in."
+        />
+      </div>
+
       <hr className="separator" />
       <div className="contact-me">
         <h2 className="section-title">Get In Touch</h2>
