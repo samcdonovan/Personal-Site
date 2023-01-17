@@ -209,14 +209,18 @@ p {
 }
 
 /* Skills */
-.skill-row {
+.skill-row, .panel-row {
   width: 50%;
   margin: auto;
   margin-bottom: 150px;
   text-align: left;
 }
 
-.skill-row img {
+.skill-row img, .panel-row img {
+  width: 25%;
+}
+
+.info-box img {
   width: 25%;
 }
 
@@ -526,9 +530,16 @@ p {
     height: 200%;
   }
 
-  .skill-row {
-    width: 80%;
-    margin-bottom: 0;
+
+  .panel-row {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 150px;
+    text-align: left;
+  }
+
+  .panel-row img {
+    width: 25%;
   }
 
   .contact-message {
