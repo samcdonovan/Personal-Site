@@ -209,19 +209,34 @@ p {
 }
 
 /* Skills */
-.skill-row, .panel-row {
+.skill-row {
   width: 50%;
   margin: auto;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   text-align: left;
 }
 
-.skill-row img, .panel-row img {
+.skill-row img {
   width: 25%;
 }
 
+.currently-doing {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.currently-doing .section-title {
+  margin-bottom: 0;
+}
+
+.info-para {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
 .info-box img {
-  width: 25%;
+  width: 35%;
+  margin-bottom: 10px;
 }
 
 .left-img {
@@ -236,7 +251,7 @@ p {
 
 /* Contact */
 .contact-me {
-  margin: 100px 0;
+  margin: 50px 0;
 }
 
 .contact-message {

@@ -32,10 +32,10 @@ export default function Home() {
         />
       </div>
 
-      <div className="container-fluid">
+      <div className="container-fluid currently-doing">
 
         <h2 className="section-title">What am I currently doing?</h2>
-        <p>A snapshot of what I'm currently doing in my spare time!</p>
+        <p className="info-para">A snapshot of what I'm currently doing in my spare time!</p>
         <div className="container-fluid">
 
           <div className="row">

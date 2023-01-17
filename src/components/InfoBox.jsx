@@ -1,9 +1,9 @@
 
 export default function InfoBox(props) {
     return (
-        <div className="info-box col-lg-3">
+        <div className="info-box col-lg-3 col-sm-6">
             <img className={props.imgPos} src={props.src} alt={props.alt} />
-            <h3 className="sub-title">{props.title}</h3>
+            <p>{props.title}</p>
         </div>
     );
 }
