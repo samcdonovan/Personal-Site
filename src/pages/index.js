@@ -35,7 +35,7 @@ export default function Home() {
       <div className="container-fluid currently-doing">
 
         <h2 className="section-title">What am I currently doing?</h2>
-        <p className="info-para">A snapshot of what I'm currently doing in my spare time!</p>
+        <p className="info-para">A small snapshot of what I'm currently doing in my spare time!</p>
         <div className="container-fluid">
 
           <div className="row">
@@ -45,7 +45,7 @@ export default function Home() {
               title="Learning Docker and Kubernetes"
             />
             <InfoBox
-              src="img/computer.png"
+              src="img/fullstack.png"
               alt="runner"
               title="Personal FullStack project"
             />
