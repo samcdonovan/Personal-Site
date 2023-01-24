@@ -77,7 +77,7 @@ export default function Project(props) {
                                 </div>
                             }
                         </div>
-                        <div className="description">
+                        <div className={"description" + (props.technologies === undefined ? "-notech" : null)}>
                             <p>{props.description}</p>
                         </div>
                     </div>

@@ -338,6 +338,10 @@ p {
   transform: scale(1.1);
 }
 
+.description-notech {
+  padding: 0 15%;
+}
+
 /* Alternating background styling */
 .bg-1, .bg-1 i {
   background-color: #6e918c;
