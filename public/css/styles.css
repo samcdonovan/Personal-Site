@@ -70,7 +70,7 @@ body {
 }
 
 .hidden-y {
-  transform: translateY(-100%);
+  transform: translateY(10%);
   transition: all 2s;
 }
 
