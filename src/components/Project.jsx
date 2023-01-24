@@ -25,7 +25,7 @@ export default function Project(props) {
     const bgType = props.id % 2 === 0 ? "1" : "2";
 
     return (
-        <div className={"container-fluid" + (props.type === "main" ? " main-proj col-sm-12" : " other-proj col-sm-6")}>
+        <div className={"hidden-y container-fluid" + (props.type === "main" ? " main-proj col-sm-12" : " other-proj col-sm-6")}>
             <div className={"project justify-content-center bg-" + bgType}>
 
                 <h2 className="section-title">{props.title}</h2>

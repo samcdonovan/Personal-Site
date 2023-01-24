@@ -1,7 +1,25 @@
 import Skill from '../components/Skill.jsx';
 import InfoBox from '../components/InfoBox.jsx';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+        /*else {
+          entry.target.classList.remove('show');
+        }*/
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden-x');
+    hiddenElements.forEach((el) => observer.observe(el));
+  });
+
   return (
     <div className="middle-container">
       <div className="profile container">
@@ -15,7 +33,7 @@ export default function Home() {
 
       <div className="skills container-fluid">
 
-        <h2 className="section-title">Skills/Interests</h2>
+        <h2 className="section-title hidden-x">Skills/Interests</h2>
         <Skill
           imgPos="left-img"
           src="img/computer.png"
@@ -34,11 +52,11 @@ export default function Home() {
 
       <div className="container-fluid currently-doing">
 
-        <h2 className="section-title">What am I currently doing?</h2>
-        <p className="info-para">A small snapshot of what I'm currently doing in my spare time!</p>
+        <h2 className="section-title hidden-x">What am I currently doing?</h2>
+        <p className="info-para hidden-x">A small snapshot of what I'm currently doing in my spare time!</p>
         <div className="container-fluid">
 
-          <div className="row">
+          <div className="row infoBoxes">
             <InfoBox
               src="img/docker-kubernetes.png"
               alt="docker and kubernetes logos"

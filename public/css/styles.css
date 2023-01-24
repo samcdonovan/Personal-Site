@@ -59,6 +59,27 @@ body {
   border-bottom: 1px solid var(--font-color);
 }
 
+.hidden-x, .hidden-y {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+}
+
+.hidden-x {
+  transform: translateX(-100%);
+}
+
+.hidden-y {
+  transform: translateY(-100%);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}
+
 /* ======
    NAVBAR 
    ======*/
@@ -88,6 +109,7 @@ body {
 /* Light/dark mode toggle */
 .mode-icon {
   color: #f9d71c;
+  margin-top: 5px;
   margin-left: 50px;
   border-style: solid;
   border-radius: 100%;
@@ -237,6 +259,22 @@ p {
 .info-box img {
   width: 35%;
   margin-bottom: 10px;
+}
+
+.infoBoxes div:nth-child(2), .other-proj:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.infoBoxes div:nth-child(3), .other-proj:nth-child(3) {
+  transition-delay: 300ms;
+}
+
+.infoBoxes div:nth-child(4), .other-proj:nth-child(4) {
+  transition-delay: 400ms;
+}
+
+.other-proj:nth-child(5) {
+  transition-delay: 500ms;
 }
 
 .left-img {
@@ -622,5 +660,11 @@ p {
   .header-desc {
     width: 40%;
     margin: auto;
+  }
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }
