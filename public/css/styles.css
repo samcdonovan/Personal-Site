@@ -61,15 +61,16 @@ body {
 
 .hidden-x, .hidden-y {
   opacity: 0;
-  filter: blur(5px);
   transition: all 1s;
 }
 
 .hidden-x {
+  filter: blur(5px);
   transform: translateX(-100%);
 }
 
 .hidden-y {
+  filter: blur(1px);
   transform: translateY(10%);
   transition: all 2s;
 }
