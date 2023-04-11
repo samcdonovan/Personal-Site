@@ -1,0 +1,16 @@
+.footer-link {
+    font-family: var(--main-font);
+    margin: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:visited {
+    color: blue;
+}
+
+.copyright {
+    color: var(--highlight-color);
+    font-size: 0.75rem;
+    padding: 20px 0;
+}

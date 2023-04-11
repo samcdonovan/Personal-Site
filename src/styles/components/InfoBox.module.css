@@ -1,0 +1,16 @@
+.info-box img {
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+.infoBoxes div:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.infoBoxes div:nth-child(3) {
+    transition-delay: 300ms;
+}
+
+.infoBoxes div:nth-child(4) {
+    transition-delay: 400ms;
+}

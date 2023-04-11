@@ -1,5 +1,6 @@
 import { React, useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import styles from '../styles/components/Project.module.css';
 
 export default function Project(props) {
 
@@ -25,8 +26,10 @@ export default function Project(props) {
     const bgType = props.id % 2 === 0 ? "1" : "2";
 
     return (
-        <div className={"hidden-y container-fluid" + (props.type === "main" ? " main-proj col-sm-12" : " other-proj col-sm-6")}>
-            <div className={"project justify-content-center bg-" + bgType}>
+        <div className={"hidden-y container-fluid" + (
+            props.type === "main" ? " " + styles['main-proj'] + "col-sm-12"
+                : " " + styles['other-proj'] + " col-sm-6")}>
+            <div className={styles['project'] + " justify-content-center " + styles['bg-' + bgType]}>
 
                 <h2 className="section-title">{props.title}</h2>
                 <hr className="separator" />
@@ -37,14 +40,14 @@ export default function Project(props) {
                             <Carousel controls={false} variant="dark">
                                 {props.images.map((image, index) => {
                                     return (
-                                        <Carousel.Item key={index} className="item">
+                                        <Carousel.Item key={index} className={styles['item']}>
                                             <img
                                                 className="d-block"
                                                 src={image.src}
                                                 alt={props.title + " slide " + index}
                                             />
-                                            <Carousel.Caption className="caption">
-                                                <p className="caption-text">{image.caption}</p>
+                                            <Carousel.Caption className={styles['caption']}>
+                                                <p className={styles['caption-text']}>{image.caption}</p>
                                             </Carousel.Caption>
                                         </Carousel.Item>)
                                 })}
@@ -59,9 +62,9 @@ export default function Project(props) {
 
                                 <h3 className="sub-title">Languages:</h3>
 
-                                <div className="languages">
+                                <div className={styles['languages']}>
                                     {props.languages.map((language) => {
-                                        return <span key={language.lang} className={"badge " + language.type}>{language.lang}</span>;
+                                        return <span key={language.lang} className={"badge " + styles[language.type]}>{language.lang}</span>;
                                     })}
                                 </div>
                             </div>
@@ -69,20 +72,20 @@ export default function Project(props) {
                             {props.technologies === undefined ? null :
                                 <div className={"col-" + (props.type === "other" ? "6" : "md-12")}>
                                     <h3 className="sub-title">Technologies / Frameworks:</h3>
-                                    <div className="technologies">
+                                    <div className={styles['technologies']}>
                                         {props.technologies.map((technology) => {
-                                            return <span key={technology.tech} className={"badge " + technology.type}>{technology.tech}</span>;
+                                            return <span key={technology.tech} className={"badge " + styles[technology.type]}>{technology.tech}</span>;
                                         })}
                                     </div>
                                 </div>
                             }
                         </div>
-                        <div className={"description" + (props.technologies === undefined ? "-notech" : null)}>
+                        <div className={styles['description' + (props.technologies === undefined ? "-notech" : null)]}>
                             <p>{props.description}</p>
                         </div>
                     </div>
                 </div>
-                <a href={props.link} className="proj-link" target="_blank">
+                <a href={props.link} className={styles['proj-link']} target="_blank">
                     <i className="fa-brands fa-github fa-5x" alt="github logo"></i>
                 </a>
             </div>

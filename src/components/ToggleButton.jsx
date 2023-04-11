@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from 'react';
+import styles from '../styles/components/ToggleButton.module.css';
 
 export default function ToggleButton() {
 
@@ -12,13 +13,13 @@ export default function ToggleButton() {
 
     return (
         <button
-            className="navbar-brand mode-icon"
+            className={styles['mode-icon'] + " navbar-brand"}
             type="button"
             onClick={() => { setActiveTheme(inactiveTheme) }}>
 
             <i className={"fa-2x fa-solid" + (activeTheme === "light" ? " fa-sun" : " fa-moon")} alt="sun/moon icon"></i>
-            <div className="mode-text-container">
-                <p className="mode-text">{activeTheme === "light" ? "Sol!" : "Luna!"}</p>
+            <div className={styles['mode-text-container']}>
+                <p className={styles['mode-text']}>{activeTheme === "light" ? "Sol!" : "Luna!"}</p>
             </div>
         </button>
     );

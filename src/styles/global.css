@@ -85,6 +85,7 @@ body {
    NAVBAR 
    ======*/
 .navbar {
+  /* bootstrap classes */
   text-align: center;
   top: 0;
   padding-right: 20px;
@@ -105,38 +106,6 @@ body {
 
 .nav-link:hover, a:hover {
   color: var(--highlight-color);
-}
-
-/* Light/dark mode toggle */
-.mode-icon {
-  color: #f9d71c;
-  margin-top: 5px;
-  margin-left: 50px;
-  border-style: solid;
-  border-radius: 100%;
-  border-color: grey;
-  width: 60px;
-  height: 60px;
-  background: none;
-}
-
-.mode-icon:hover {
-  color: #f9d71c;
-}
-
-.mode-icon:focus {
-  outline: none;
-  color: #f9d71c;
-}
-
-.mode-text-container {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.mode-text {
-  color: #dcbb06;
-  font-size: 1rem;
 }
 
 /* =====
@@ -161,10 +130,6 @@ body {
 
 p {
   line-height: 2;
-}
-
-#footer-link:visited {
-  color: blue;
 }
 
 /* ==========
@@ -231,18 +196,6 @@ p {
   margin-bottom: 50px;
 }
 
-/* Skills */
-.skill-row {
-  width: 50%;
-  margin: auto;
-  margin-bottom: 100px;
-  text-align: left;
-}
-
-.skill-row img {
-  width: 25%;
-}
-
 .currently-doing {
   width: 80%;
   margin-bottom: 50px;
@@ -255,27 +208,6 @@ p {
 .info-para {
   margin-top: 0;
   margin-bottom: 25px;
-}
-
-.info-box img {
-  width: 35%;
-  margin-bottom: 10px;
-}
-
-.infoBoxes div:nth-child(2), .other-proj:nth-child(2) {
-  transition-delay: 200ms;
-}
-
-.infoBoxes div:nth-child(3), .other-proj:nth-child(3) {
-  transition-delay: 300ms;
-}
-
-.infoBoxes div:nth-child(4), .other-proj:nth-child(4) {
-  transition-delay: 400ms;
-}
-
-.other-proj:nth-child(5) {
-  transition-delay: 500ms;
 }
 
 .left-img {
@@ -298,19 +230,6 @@ p {
   margin: 40px auto 60px;
 }
 
-.footer-link {
-  font-family: var(--main-font);
-  margin: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.copyright {
-  color: var(--highlight-color);
-  font-size: 0.75rem;
-  padding: 20px 0;
-}
-
 /* =============
    PROJECTS PAGE 
    =============*/
@@ -320,132 +239,12 @@ p {
   padding: 0;
 }
 
-.project {
-  text-align: center;
-  padding: 3%;
-}
-
-.project hr {
-  border-color: #e5e5e5;
-  width: 10%;
-  margin-bottom: 20px;
-}
-
-.proj-link i {
-  transition: all .5s ease-out;
-}
-
-.proj-link i:hover {
-  transform: scale(1.1);
-}
-
-.description-notech {
-  padding: 0 15%;
-}
-
-/* Alternating background styling */
-.bg-1, .bg-1 i {
-  background-color: #6e918c;
-}
-
-.bg-1, .bg-1 i, .bg-1 .caption {
-  color: #f4f7f5;
-}
-
-.bg-1 .section-title, .bg-1 .sub-title {
-  color: #f4f7f5;
-  text-shadow: 0px 1px #689e9e;
-}
-
-.bg-1 hr {
-  border-color: #fff;
-}
-
-.bg-2, .bg-2 i {
-  background-color: #f4f7f5;
-}
-
-.bg-2, .bg-2 i, .bg-2 .caption {
-  color: black;
-}
-
-.bg-2 .section-title, .bg-2 .sub-title {
-  color: #2f4747;
-  text-shadow: 0px 1px #689e9e;
-}
-
-.bg-2 hr {
-  border-color: black;
-}
-
-.other-proj {
-  padding: 2px;
-}
-
-.other-proj .project {
-  height: 450px;
-  font-size: 0.8rem;
-}
-
-.other-proj .section-title, .other-proj .sub-title {
-  font-size: 1.5rem;
-}
-
-.other-proj .project, .other-proj .section-title, .other-proj .sub-title, .other-proj i, .other-proj hr {
-  background-color: var(--main-bg);
-  color: var(--font-color);
-}
-
-.other-proj hr {
-  border-color: var(--font-color);
-}
-
-/* Languages and technologies */
-.technologies, .languages {
-  padding: 0 5%;
-}
-
 .fa-github {
   color: black;
 }
 
-.js {
-  background-color: #d6b85a;
-}
-
-.ts {
-  background-color: #fde992;
-}
-
-.php {
-  background-color: plum;
-}
-
-.java {
-  background-color: coral;
-}
-
-.py {
-  background-color: #72a0c1;
-}
-
-.special {
-  background-color: violet;
-}
-
-.other {
-  background-color: rgb(212, 211, 211);
-}
-
-.cpp {
-  background-color: #ff5733;
-}
-
-.db {
-  background-color: aquamarine;
-}
-
 .badge {
+  /* bootstrap */
   color: black;
   font-size: 1rem;
   margin: 10px;
@@ -474,19 +273,6 @@ p {
   border-radius: 10px;
   height: 8px;
   width: 50px;
-}
-
-.item {
-  position: relative;
-  height: 350px;
-}
-
-.item img {
-  position: relative;
-  height: 80%;
-  width: auto;
-  margin: auto;
-  border-radius: 1%;
 }
 
 /* ============
@@ -546,15 +332,6 @@ p {
     padding-bottom: 15px;
   }
 
-  .mode-icon {
-    margin-left: 10px;
-    margin-top: 5px;
-  }
-
-  .mode-text-container {
-    visibility: hidden;
-  }
-
   /* Clouds and mountains (home) */
   .mountain {
     position: relative;
@@ -588,7 +365,6 @@ p {
     height: 200%;
   }
 
-
   .panel-row {
     width: 50%;
     margin: auto;
@@ -602,11 +378,6 @@ p {
 
   .contact-message {
     width: 80%;
-  }
-
-  /* Projects */
-  .project {
-    padding: 3%;
   }
 
   .badge {
@@ -628,20 +399,8 @@ p {
     bottom: -55px;
   }
 
-  .other-proj .section-title, .other-proj .sub-title {
-    font-size: 1rem;
-  }
-
   .badge {
     font-size: 0.7rem;
-  }
-
-  .item {
-    height: 250px;
-  }
-
-  .item img {
-    height: 80%;
   }
 
   /* Contact form */

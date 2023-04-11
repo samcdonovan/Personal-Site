@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import dynamic from "next/dynamic";
 import mountainImg from "../../public/img/mountain.png";
+import styles from '../styles/components/Navbar.module.css';
 import { useRouter } from 'next/router';
 
 const ToggleButton = dynamic(() => import("./ToggleButton.jsx"), {

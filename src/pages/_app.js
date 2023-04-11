@@ -1,6 +1,6 @@
 import Layout from '../components/Layout.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
-import "../../public/css/styles.css";
+import "../styles/global.css";
 import Head from 'next/head';
 import { useEffect } from "react";
 

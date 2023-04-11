@@ -1,0 +1,43 @@
+/* Light/dark mode toggle */
+.mode-icon {
+    color: #f9d71c;
+    margin-top: 5px;
+    margin-left: 50px;
+    border-style: solid;
+    border-radius: 100%;
+    border-color: grey;
+    width: 60px;
+    height: 60px;
+    background: none;
+}
+
+.mode-icon:hover {
+    color: #f9d71c;
+}
+
+.mode-icon:focus {
+    outline: none;
+    color: #f9d71c;
+}
+
+.mode-text-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mode-text {
+    color: #dcbb06;
+    font-size: 1rem;
+}
+
+@media(max-width:900px) {
+
+    .mode-icon {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .mode-text-container {
+        visibility: hidden;
+    }
+}

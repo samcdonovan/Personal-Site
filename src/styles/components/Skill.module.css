@@ -1,0 +1,11 @@
+/* Skills */
+.skill-row {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 100px;
+    text-align: left;
+}
+
+.skill-row img {
+    width: 25%;
+}
